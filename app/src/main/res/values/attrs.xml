@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OrderView">
+        <attr name="ov_title" format="string" />
+        <attr name="ov_value" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SectionView">
+        <attr name="sv_section" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="IncomeView">
+
+    </declare-styleable>
+
+    <declare-styleable name="ExpenseView">
+        <attr name="ev_expenseCanEditable" format="boolean" />
+        <attr name="ev_description" format="string" />
+        <attr name="ev_title" format="string" />
+        <attr name="ev_amount" format="string" />
+        <attr name="ev_isExpenseList" format="boolean" />
+    </declare-styleable>
+</resources>

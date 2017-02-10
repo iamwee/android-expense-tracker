@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/view_expense_summary" />
+
+        <com.iamwee.expensetracker.widget.ExpenseView
+            android:layout_width="match_parent"
+            app:ev_title="Travel"
+            app:ev_amount="1200"
+            app:ev_description="Travel to Osaka."
+            app:ev_expenseCanEditable="false"
+            app:ev_isExpenseList="true"
+            android:layout_height="wrap_content"/>
+
+        <com.iamwee.expensetracker.widget.ExpenseView
+            android:layout_width="match_parent"
+            app:ev_title="Salary"
+            app:ev_amount="25000"
+            app:ev_expenseCanEditable="true"
+            app:ev_description="Salary from android developer"
+            app:ev_isExpenseList="false"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.FloatingActionButton"
+        android:id="@+id/fab_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_add_white"
+        app:fabSize="normal" />
+
+</RelativeLayout>

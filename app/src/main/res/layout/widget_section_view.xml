@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/sv_section"
+    android:text="Summary"
+    android:textColor="@color/colorAccent"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
